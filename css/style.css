@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #f1fff0;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh; 
+}
+.wrapper{
+    flex:1;
+}
+
+/* Navbar modificaciones de BootStrap*/
+.varlogo{
+    width: 110px;
+    background-color:rgba(0, 0, 0, 0.010);
+}
+
+.navbar{
+    font-size: 18px;
+    font-weight: bolder;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+/* Carrusel en index*/
+.carousel-width{
+    object-fit: cover;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel img{
+    height: 40vw;
+    margin-top: 10px;
+}
+
+/*Configuracion del footer*/
+footer{
+    list-style-type: none;
+}
+.redes{
+    display: flex; 
+    background-color: rgb(52, 104, 91);
+    justify-content: flex-start;
+}
+.redes_icon{
+    width: 48px;
+    height: 48px;
+    padding-left: 15px;
+    margin-top: 2px;
+}
+
