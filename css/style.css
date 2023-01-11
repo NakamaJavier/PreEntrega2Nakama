@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,600;0,700;0,900;1,700&family=Poppins:ital@1&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 *{
     margin:0;
     padding:0;
@@ -19,8 +19,41 @@ h1{
     font-size:38px;
     text-align:center;
     color: #12708d;
+    margin-bottom: 20px;
 }
-
+h2{
+    margin-top:10px;
+    font-family: 'Noto Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #12708d;
+    
+}
+h3{
+    margin-top:10px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: black;
+}
+p{
+    margin: 15px;
+    color: #000108;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
 
 /* Navbar modificaciones de BootStrap*/
 .varlogo{
@@ -35,7 +68,7 @@ h1{
     margin-bottom: 30px;
 }
 
-/* Carrusel en index*/
+/* Configuracion Carrusel en index*/
 .carousel-width{
     
     width: 80vw;
@@ -45,7 +78,19 @@ h1{
 }
 .carousel img{
     object-fit: cover;
-    height: 37vw;
+    height: 32vw;
+}
+.carousel-caption p{
+    margin: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 
 /*Configuracion del footer*/
@@ -64,3 +109,44 @@ footer{
     margin-top: 2px;
 }
 
+/*Grid Reserva */
+.gridContenedor{
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    ".   .    .    .    .     .     .     .     .     .    .    . "
+    "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho"
+    "ec  ec   ec   ec   .     fe    fe    fe    .     .    .    . "
+    ".   .    .    .    .     tr    tr   tr     .     pt   pt   pt"
+    ".   .    .    .    .     .     .     .     .     re   re   re";
+}
+
+.caja{
+    margin: 10px;
+}
+.elijaCancha{
+    grid-area: ec;
+}
+
+.fecha{
+    grid-area: fe
+}
+
+.horario{
+    grid-area: ho;
+}
+
+.tiempoReserva{
+    grid-area: tr;
+}
+
+.precioTotal{
+    grid-area: pt;
+}
+
+.reservar{
+    grid-area: re;
+}

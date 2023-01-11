@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./img/varpadel_favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/varpadel_favicon.png" type="./image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(0deg, #03a120 60%, #f0eb30);">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(11deg, #03a120 60%, #f0eb30);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="varlogo" src="../img/varlogo.png" alt="pelota de padel con la palabra var en bordo y padel en negro separadas por una linea vertical"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,60 @@
     </header>
 
     <section class="wrapper">
-
+        <main>
+            <h1>
+                RESERVA TU CANCHA
+            </h1>
+        </main>
+        <section>
+            <div class="gridContenedor">
+                <div class="caja elijaCancha">
+                    <h3>
+                        Elija la cancha:
+                    </h3>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Canchas</option>
+                        <option value="1">Cancha 1 (cemento A)</option>
+                        <option value="2">Cancha 2 (cemento A)</option>
+                        <option value="3">Cancha 3 (sintetico T)</option>
+                        <option value="4">Cancha 4 (sintetico T)</option>
+                        <option value="5">Cancha 5 (sintetico T)</option>
+                        <option value="6">Cancha 6 (sintetico T)</option>
+                        <option value="7">Cancha 7 (sintetico T)</option>
+                    </select>
+                    <h3>
+                        A: Abierta (sin techo)<br>T: Techada
+                    </h3>
+                </div>
+                <div class="caja fecha">
+                    <h3>
+                        Fecha:
+                    </h3>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="caja horario">
+                    <h3>
+                        Horario:
+                    </h3>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="HH:MM">
+                </div>
+                <div class="caja tiempoReserva">
+                    <h3>
+                        Tiempo de Rerserva:
+                    </h3>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="HH:MM">
+                </div>
+                <div class="caja precioTotal">
+                    <h3>
+                        Precio Total:
+                    </h3>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="XXXXX" disabled>
+                </div>
+                <div class="caja reservar">
+                    <button type="button" class="btn btn-primary">Reservar</button>
+                </div>
+            </div>
+        </section>
     </section>
     <footer>
         <div class="redes">
