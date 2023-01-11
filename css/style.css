@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,600;0,700;0,900;1,700&family=Poppins:ital@1&family=Roboto:ital@1&display=swap');
 *{
     margin:0;
     padding:0;
@@ -11,6 +12,16 @@ body{
 .wrapper{
     flex:1;
 }
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-style:normal;
+    font-weight:900;
+    font-size:38px;
+    text-align:center;
+    color: #12708d;
+    margin: 15px 0px 15px 0px;
+}
+
 
 /* Navbar modificaciones de BootStrap*/
 .varlogo{
@@ -27,14 +38,15 @@ body{
 
 /* Carrusel en index*/
 .carousel-width{
-    object-fit: cover;
+    
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid rgba(0, 0, 0, 0.7);
 }
 .carousel img{
-    height: 40vw;
-    margin-top: 10px;
+    object-fit: cover;
+    height: 37vw;
 }
 
 /*Configuracion del footer*/
