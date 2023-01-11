@@ -99,7 +99,7 @@ footer{
 }
 .redes{
     display: flex; 
-    background-color: rgb(52, 104, 91);
+    background-color: rgb(52, 104, 90);
     justify-content: flex-start;
 }
 .redes_icon{
