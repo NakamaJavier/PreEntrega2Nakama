@@ -142,7 +142,7 @@ footer{
     grid-area: pt;
 }
 .reservar{
-    margin-top: 22%;
+    margin-top: 26%;
     margin-left: 10%;
     grid-area: re;
 }
@@ -199,8 +199,9 @@ footer{
 /*Configuracion de pagina productos */
 .gridProductos{
     display: grid;
-    align-items: center;  
     width: 97%;
+    align-items: center;  
+    justify-items: center;
     margin-top: 20px;
     margin-left: 10px;
     grid-template-columns:repeat(8,1fr);
@@ -311,8 +312,8 @@ footer{
 
 /*Configuracion pagina Nosotros */
 .flexNosotros{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .flexqs{
     
@@ -340,7 +341,7 @@ footer{
 }
 /*Aplico MediaQueries en index, reserva, nosotros y productos */
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1770px){
     /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(7,1fr);
@@ -483,5 +484,28 @@ footer{
         "caja11 caja12"
         "caja13 caja14"
         "caja15    .  ";      
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 33%;
+    }
+}
+
+@media screen and (max-width: 455px){
+    /*para productos*/
+    .gridProductos{  
+        margin-top: 20px;
+        margin-left: 3px;
+        
+    }
+    .box_venta{
+        height: 270px;
+        width: 170px;
+        margin: 2px;
+        margin-bottom: 10px;
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 35%;
     }
 }
