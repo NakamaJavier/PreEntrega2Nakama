@@ -23,11 +23,10 @@ h1{
 }
 h2{
     margin-top:10px;
-    font-family: 'Noto Sans', sans-serif;;
+    font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
-    text-align: left;
     letter-spacing: 2px;
     color: #12708d;
     text-align:center;
@@ -51,7 +50,6 @@ p{
     font-size: 18px;
     text-align: justify;
     line-height: 20px;
-    letter-spacing: 1px;
 }
 
 /* Navbar modificaciones de BootStrap*/
@@ -108,7 +106,7 @@ footer{
     margin-top: 2px;
 }
 
-/*Grid Reserva */
+/*Configuracion pagina Reserva */
 .gridCenter{
     display: flex;
     justify-content: center;
@@ -311,9 +309,39 @@ footer{
     color: #000000;
 }
 
-/*Aplico MediaQueries en index, reserva y productos */
+/*Configuracion pagina Nosotros */
+.flexNosotros{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.flexqs{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flexnc{
+    margin-top: 8vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.textns{
+    width: 33%;
+}
+.imgns{
+    width: 28%;
+}
+.imgns img{
+    width: 100%;
+    object-fit: cover;
+}
+/*Aplico MediaQueries en index, reserva, nosotros y productos */
 
 @media screen and (max-width: 1700px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(7,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -322,8 +350,17 @@ footer{
         "caja8  caja9  caja10 caja11 caja12 caja13 caja14"
         "caja15  .      .       .       .      .      .  ";
     }
+    /*para nosotros */
+    .textns{
+        width: 37%;
+    }
+    .imgns{
+        width: 30%;
+    }
 }
+
 @media screen and (max-width: 1550px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(6,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -332,8 +369,15 @@ footer{
         "caja7  caja8  caja9  caja10 caja11 caja12"
         "caja13 caja14 caja15  .      .       .   ";
     }
+    .textns{
+        width: 38%;
+    }
+    .imgns{
+        width: 32%;
+    }
 }
 @media screen and (max-width: 1350px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(5,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -342,8 +386,17 @@ footer{
         "caja6  caja7  caja8  caja9  caja10"
         "caja11 caja12 caja13 caja14 caja15";
     }
+    /*para nosotros */
+    .textns{
+        width: 40%;
+    }
+    .imgns{
+        width: 35%;
+    }
 }
+
 @media screen and (max-width: 1120px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
@@ -353,14 +406,42 @@ footer{
         "caja9  caja10 caja11 caja12"
         "caja13 caja14 caja15  .    ";
     }
+    /*para index */
     .carousel-width{
         width: 100vw;
     }
     .carousel img{
         height: 40vw;
     }
+    /*para nosotros */
+    .flexNosotros{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .flexqs{
+        display:block;
+    }
+    .flexnc{
+        margin-top: 8vh;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .textns{
+        width: auto;
+    }
+    .imgns{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imgns img{
+        width: 80%;
+        object-fit: cover;
+    }
 }
+
 @media screen and (max-width: 890px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(3,1fr);
         grid-template-rows: repeat(5,1fr);
@@ -371,6 +452,7 @@ footer{
         "caja10 caja11 caja12"
         "caja13 caja14 caja15";
     }
+    /*para reserva*/
     .gridContenedor{
         width: 70vw;
         height: 50vh;
@@ -384,8 +466,11 @@ footer{
         "tr  tr   tr    . "
         "pt  pt   .     re";
     }
+    
 }
+
 @media screen and (max-width: 675px){
+    /*para productos*/
     .gridProductos{
         grid-template-columns:repeat(2,1fr);
         grid-template-rows: repeat(8,1fr);
