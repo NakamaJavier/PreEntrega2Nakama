@@ -117,6 +117,7 @@ footer{
     width: 70vw;
     height: 50vh;
     display: grid;
+    background-color: #fffb0011;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
@@ -143,6 +144,8 @@ footer{
     grid-area: pt;
 }
 .reservar{
+    margin-top: 22%;
+    margin-left: 10%;
     grid-area: re;
 }
 
@@ -159,6 +162,7 @@ footer{
     "tel1   tel3"
     "wapp  wapp1"
     "mail  mail1";
+    margin-bottom: 20px;
 }
 .info_contacto{
     margin:5px;
@@ -184,7 +188,16 @@ footer{
 .email1{
     grid-area:mail1;
 }
-
+.ubicacion{
+    display: grid;
+    justify-items: center
+}
+.ubicacion h4{
+    text-align: center;
+}
+.ubicacion a{
+    font-weight: 700;
+}
 /*Configuracion de pagina productos */
 .gridProductos{
     display: grid;
@@ -196,11 +209,9 @@ footer{
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
     "caja1 caja2  caja3  caja4  caja5  caja6  caja7  caja8 "
-    "caja9 caja10 caja11 caja12 caja13 caja14 caja15 caja15";
+    "caja9 caja10 caja11 caja12 caja13 caja14 caja15    .  ";
 }
-.caja_producto:hover{
-    scale: 121%;
-}
+
 .caja1{
     grid-area:caja1;
 }
@@ -250,6 +261,11 @@ footer{
     grid-area:caja16;
 }
 
+.caja_producto:hover{
+    /* Agrego efecto de escalado a las cajas de producto*/
+    scale: 130%;
+}
+
 .box_venta{
     background-color: white;
     height: 270px;
@@ -262,6 +278,7 @@ footer{
     grid-template-rows: 186px 58px 26px;
     margin:10px;
 }
+
 .box_venta_img{
     display: flex;
     flex-direction: row;
@@ -272,7 +289,6 @@ footer{
     width: auto;
     max-width: 150px;
     margin: 3px;
-
 }
 .gridProductos div h2{
     font-family: 'Roboto', sans-serif;
@@ -293,4 +309,94 @@ footer{
     letter-spacing: 2px;
     word-spacing: 0px;
     color: #000000;
+}
+
+/*Aplico MediaQueries en index, reserva y productos */
+
+@media screen and (max-width: 1700px){
+    .gridProductos{
+        grid-template-columns:repeat(7,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6  caja7 "
+        "caja8  caja9  caja10 caja11 caja12 caja13 caja14"
+        "caja15  .      .       .       .      .      .  ";
+    }
+}
+@media screen and (max-width: 1550px){
+    .gridProductos{
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6 "
+        "caja7  caja8  caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .      .       .   ";
+    }
+}
+@media screen and (max-width: 1350px){
+    .gridProductos{
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5 "
+        "caja6  caja7  caja8  caja9  caja10"
+        "caja11 caja12 caja13 caja14 caja15";
+    }
+}
+@media screen and (max-width: 1120px){
+    .gridProductos{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4 "
+        "caja5  caja6  caja7  caja8 "
+        "caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .    ";
+    }
+    .carousel-width{
+        width: 100vw;
+    }
+    .carousel img{
+        height: 40vw;
+    }
+}
+@media screen and (max-width: 890px){
+    .gridProductos{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3 "
+        "caja4  caja5  caja6 "
+        "caja7  caja8  caja9 "
+        "caja10 caja11 caja12"
+        "caja13 caja14 caja15";
+    }
+    .gridContenedor{
+        width: 70vw;
+        height: 50vh;
+        display: grid;
+        background-color: #fffb0011;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "ec  ec   ec   .  "
+        "fe  fe   ho   ho "
+        "tr  tr   tr    . "
+        "pt  pt   .     re";
+    }
+}
+@media screen and (max-width: 675px){
+    .gridProductos{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "caja1  caja2 "
+        "caja3  caja4 "
+        "caja5  caja6 "
+        "caja7  caja8 "
+        "caja9  caja10"
+        "caja11 caja12"
+        "caja13 caja14"
+        "caja15    .  ";      
+    }
 }
