@@ -33,12 +33,11 @@ h2{
     text-align:center;
 }
 h3{
-    margin-top:10px;
-    margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
+    line-height: auto;
     text-align: left;
     letter-spacing: 2px;
     color: black;
@@ -125,30 +124,24 @@ footer{
     ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt"
     ".   .    .    .    .     .     .     .     .     re   re   re";
 }
-
 .caja{
     margin: 10px;
 }
 .elijaCancha{
     grid-area: ec;
 }
-
 .fecha{
     grid-area: fe
 }
-
 .horario{
     grid-area: ho;
 }
-
 .tiempoReserva{
     grid-area: tr;
 }
-
 .precioTotal{
     grid-area: pt;
 }
-
 .reservar{
     grid-area: re;
 }
@@ -190,4 +183,114 @@ footer{
 }
 .email1{
     grid-area:mail1;
+}
+
+/*Configuracion de pagina productos */
+.gridProductos{
+    display: grid;
+    align-items: center;  
+    width: 97%;
+    margin-top: 20px;
+    margin-left: 10px;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "caja1 caja2  caja3  caja4  caja5  caja6  caja7  caja8 "
+    "caja9 caja10 caja11 caja12 caja13 caja14 caja15 caja15";
+}
+.caja_producto:hover{
+    scale: 120%;
+}
+.caja1{
+    grid-area:caja1;
+}
+.caja2{
+    grid-area:caja2;
+}
+.caja3{
+    grid-area:caja3;
+}
+.caja4{
+    grid-area:caja4;
+}
+.caja5{
+    grid-area:caja5;
+}
+.caja6{
+    grid-area:caja6;
+}
+.caja7{
+    grid-area:caja7;
+}
+.caja8{
+    grid-area:caja8;
+}
+.caja9{
+    grid-area:caja9;
+}
+.caja10{
+    grid-area:caja10;
+}
+.caja11{
+    grid-area:caja11;
+}
+.caja12{
+    grid-area:caja12;
+}
+.caja13{
+    grid-area:caja13;
+}
+.caja14{
+    grid-area:caja14;
+}
+.caja15{
+    grid-area:caja15;
+}
+.caja16{
+    grid-area:caja16;
+}
+
+.box_venta{
+    background-color: white;
+    height: 270px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: grid;
+    align-items: start;
+    justify-content: normal;
+    grid-template-rows: 186px 58px 26px;
+    margin:10px;
+}
+.box_venta_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gridProductos img{
+    height: 180px;
+    width: auto;
+    max-width: 150px;
+    margin: 3px;
+
+}
+.gridProductos div h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    color: #16256c;
+}
+.gridProductos div h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    color: #000000;
 }
