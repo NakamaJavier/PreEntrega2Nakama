@@ -455,7 +455,7 @@ footer{
     }
     /*para reserva*/
     .gridContenedor{
-        width: 70vw;
+        width: 80vw;
         height: 50vh;
         display: grid;
         background-color: #fffb0011;
